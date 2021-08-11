@@ -17,7 +17,7 @@ public class Emp {
 
  @Id
  @Column(name = "EMPNO")
- private Long empNo;
+ private Integer empno;
 
  @Column(name = "ENAME")
  private String ename;
@@ -26,18 +26,22 @@ public class Emp {
  private String job;
 
  @Column(name = "MGR")
- private Long mgr;
+ private Integer mgr;
 
  @Column(name = "HIREDATE")
  private LocalDate hiredate;
 
  @Column(name = "SAL")
- private Long sal;
+ private Integer sal;
 
  @Column(name = "COMM")
- private Long comm;
+ private Integer comm;
 
  @Column(name = "DEPTNO")
- private Long deptno;
+ private Integer deptno;
+
+// @OneToOne
+// @JoinColumn(name = "deptno")
+// private Dept dept;
 
 }

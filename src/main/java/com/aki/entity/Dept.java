@@ -1,4 +1,4 @@
-package com.aki;
+package com.aki.entity;
 
 import lombok.*;
 
@@ -16,7 +16,7 @@ public class Dept{
 
  @Id
  @Column(name = "DEPTNO")
- private Long deptno;
+ private Integer deptno;
 
  @Column(name = "DNAME")
  private String dname;
