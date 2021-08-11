@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,5 +24,8 @@ public class Dept{
 
  @Column(name = "LOC")
  private String loc;
+
+ @OneToMany(mappedBy = "dept")
+ private List<Emp> emp;
 
 }

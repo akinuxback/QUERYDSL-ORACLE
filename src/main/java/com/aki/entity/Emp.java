@@ -40,8 +40,8 @@ public class Emp {
  @Column(name = "DEPTNO")
  private Integer deptno;
 
-// @OneToOne
-// @JoinColumn(name = "deptno")
-// private Dept dept;
+ @ManyToOne(fetch = FetchType.LAZY)
+ @JoinColumn(name = "deptno")
+ private Dept dept;
 
 }
